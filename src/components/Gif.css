@@ -1,3 +1,6 @@
+:root{
+    --result-columns:2;
+}
 .Gif{
     border: 1px solid #eee;
     border-radius: 6px;
@@ -7,7 +10,7 @@
     flex-direction: column;
     margin: 16px;
     padding: 32px;
-    width: 500px;
+    width: 300px;
     
 }
 
@@ -19,4 +22,8 @@
 }
 i{
     font-size: 80px;
+}
+.ListOfGifs{
+    column-count: var(--result-columns);
+    column-gap: .5em;    
 }

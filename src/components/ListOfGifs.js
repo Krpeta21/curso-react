@@ -12,10 +12,10 @@ export default function ListOfGifs({params}) {
       setGifs(gifs);
       setLoading(false);
     });
-  }, [keyword]); //eslint-disable-line
+  }, [keyword]);
   if(loading) return <i>Cargando...</i>
 
-  return <div>
+  return <div className="ListOfGifs">
     {
       gifs.map(({ id, title, url }) => (
         <Gif key={id} title={title} id={id} url={url} />
